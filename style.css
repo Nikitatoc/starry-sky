@@ -1,0 +1,106 @@
+.switch input {
+    display:none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+}
+
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #252625;
+}
+
+
+
+input:checked + .slider:before {
+    transform: translateX(45px);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.square{
+    border-radius: 50%;
+
+    background-color: #252625;
+    border: none;
+    color: white;
+}
+
+
+#value{
+    width: 15px;
+    border: none;
+    outline: none;
+
+
+}
+#button{
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+}
+#button:hover{
+    background-color:#3c414a;
+    transition: 1s;
+}
+
+
+#month{
+    background-color: black;
+    height: 1100px ;
+    width: 100%;
+    color: #cccccc;
+    font-size: 400px;
+    text-align: center;
+    position: relative;
+
+}
+
+#moon{
+    background-color: black;
+    height: 1300px ;
+    width: 100%;
+    color: #cccccc;
+    font-size: 800px;
+    text-align: center;
+}
+
+.star{
+    display : inline-block;
+    font-size: 100px;
+    margin-bottom: 60px;
+
+    ;
+}
