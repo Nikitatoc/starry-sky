@@ -7,8 +7,8 @@
     <script src="js.js"></script>
 </head>
 <body>
-
-<form method="post" action="fgg.php">
+<?php if (@$_POST['submit']===null): ?>
+<form method="post" action="index.php">
     <label class="switch">
         <input type="checkbox" name="checkbox" value="true">
         <span class="slider round"></span>
@@ -21,10 +21,12 @@
     </span>
     <br>
     <br>
-    <button type="submit" id="button">Відправити</button>
+    <button type="submit" id="button" name="submit">Відправити</button>
 
 </form>
-
+<?php else: ?>
+  <?php require ('about.php')?>
+<?php endif; ?>
 <script>
     let n = 0;
 
